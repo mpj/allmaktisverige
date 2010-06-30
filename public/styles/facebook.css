@@ -3,6 +3,11 @@ div.like {
     display:none;
 }
 
+/* hide social plugin plug */
+.wallkit_subtitle .subtitle_left {
+	display: none;
+}
+
 div.wallkit_postcontent {
 	color: white;
 }
