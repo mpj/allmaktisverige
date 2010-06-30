@@ -2,3 +2,11 @@
 div.like {
     display:none;
 }
+
+div.wallkit_postcontent {
+	color: white;
+}
+
+.connect_widget_connected_text {
+	color: white;
+}
