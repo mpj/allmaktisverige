@@ -11,7 +11,9 @@ div.like {
 div.wallkit_postcontent {
 	color: white;
 }
-
+div.wallkit_postcontent span {
+	color: white;
+}
 .connect_widget_connected_text {
 	color: white;
 }
