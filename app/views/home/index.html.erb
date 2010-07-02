@@ -88,10 +88,13 @@
 <div id="fb-root"></div>
 <script>
 $(document).ready(function() {
+ 
+  // Facebook
   window.fbAsyncInit = function() {
     FB.init({appId: '132860020070788', status: true, cookie: true, xfbml: true});
 	FB.Event.subscribe('edge.create', function(href, widget) {
-		// TODO: do GA stuff here
+		// Tell Google Analytics that we had a like!
+		_gaq.push(['_trackEvent', 'FacebookLikes', 'Root', 'Like of Root Page']);
 	});
 
   };
@@ -101,6 +104,10 @@ $(document).ready(function() {
       '//connect.facebook.net/sv_SE/all.js';
     document.getElementById('fb-root').appendChild(e);
   }());
+  
+  // Google Analytics
+  var pageTracker = _gat._getTracker('UA-125505-21');
+  pageTracker._trackPageview();
 });
 </script>
 
