@@ -3,74 +3,43 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 	<title>En webbserie om en ung diktator, av gänget bakom Knappnytt - All makt i sverige</title>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="/styles/allmaktisverige.css" />
+	<link rel="canonical" href="http://allmaktisverige.se" />
+
 	
+	<!-- Proper embedding on FB if sharing.-->
+	<meta name="medium" content="video" />
+	<meta name="video_width" content="560" />
+	<meta name="video_height" content="340" />
+	<meta name="video_type" content="application/x-shockwave-flash" />
+	<link rel="video_src" href="http://www.youtube.com/v/voqXQnYLGnE&hl=en&fs=1" />
+	
+	<!-- OpenGraph stuff -->
+	<meta property="fb:app_id" content="132860020070788"/>
+	<meta property="fb:admins" content="640798226" />
 	<meta property="og:title" content="All makt i Sverige"/>
-	<!--<meta property="og:site_name" content="IMDb"/>-->
-	<!--<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>-->
+	<meta property="og:type" content="tv_show"/>
+	<meta property="og:image" content="http://allmaktisverige.se/images/opengraph.jpg"/>
+	
+	<meta property="og:country-name" content="Sweden"/>
+ 	<meta property="og:description" content="All Makt i Sverige är en webbserie som utspelas i en alternativ nutid där Sverige leds av en alldeles för ung diktator." />
+	<meta name="description" content="All Makt i Sverige är en webbserie som utspelas i en alternativ nutid där Sverige leds av en alldeles för ung diktator." />
 
-	<style>
-	html { 
-		background-color: #00253C; 
-		background-image: url(/images/diktator-bg.jpg); 
-		background-repeat: no-repeat; 
-		background-position: top left; 
-		font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-	
-	#container  { position: absolute; left: 35px; top: 25px; }
+	<script type="text/javascript">
 
-	#header { position: absolute; left: 100px; top: 80px; width: 700px;}
-	
-	#header h1 {
-		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
-		text-transform: uppercase;
-		color: yellow;
-		font-size: 85px;
-		text-shadow: 2px 2px 2px #000;
-	}
-	
-	#header h2 { 
-		font-size: 18px; 
-		font-weight: bold; 
-		color: white; text-shadow: 1px 1px 1px #000;
-		
-		position: relative; top: 110px;
-	}	
-	
-	#facebook_like_button { position: absolute; left: 100px; top: 225px }
-	
-	#main {
-		position: absolute;
-		left: 100px;
-		top: 345px;
-		width: 320px;
-		color: white;
-		
-		
-	}
-	#main h3 { color: white; font-size: 22px; }
-	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-125505-21']);
+	  _gaq.push(['_trackPageview']);
 
-	.quote { 
-		color: white;  
-		font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; 
-	}
-	
-	#mainquote {
-		position: relative; left: 180px; top: -125px;
-		width: 700px;
-		font-size: 28px; 
-		text-shadow: 1px 1px 1px #000;
-	}
-	
-	#teaser { position: absolute; left: 500px; top: 335px;}
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
-	#encouragement { position: absolute; left: 100px; top: 700px; width: 800px; color: white; font-size: 20px;}
-	#encouragement img.star {  float:left; margin-right: 15px; position: relative; top: -7px; }
-	#encouragement a {  color: yellow}
-	
-	</style>
+	</script>
+</head>
 
 <body>
 <div id="fb-root"></div>
@@ -96,7 +65,7 @@
 	</div>
 	
 	<div id="facebook_like_button">	
-		<fb:like href="http://allmaktisverige.se" font="lucida grande"></fb:like>
+		<fb:like href="http://allmaktisverige.se" width="425" font="lucida grande"></fb:like>
 	</div>
 
 	<div id="teaser">
@@ -114,8 +83,9 @@
 	
 	
 	<div id="encouragement">
-		<img src="/images/diktator_stjarna.png" alt="Följ er diktator!" class="star" />Håll koll på när första avsnitten släpps, följ förproduktionen, och snacka med oss:
-		<p>Följ <a href="http://www.facebook.com/pages/All-makt-i-Sverige/133076926713441">All makt i Sverige på Facebook</a>!</p>
+		<fb:comments xid="http%3A%2F%2Fallmaktisverige.se" css="http://<%= @authority %>/styles/facebook.css?5" numposts="25" width="650"></fb:comments>
+		<!--<img src="/images/diktator_stjarna.png" alt="Följ er diktator!" class="star" />Håll koll på när första avsnitten släpps, följ förproduktionen, och snacka med oss:
+		<p>Följ <a href="http://www.facebook.com/pages/All-makt-i-Sverige/133076926713441">All makt i Sverige på Facebook</a>!</p>-->
 	</div>
 	
 

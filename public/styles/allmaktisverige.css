@@ -1,0 +1,60 @@
+html { 
+	background-color: #00253C; 
+	background-image: url(/images/diktator-bg.jpg); 
+	background-repeat: no-repeat; 
+	background-position: top left; 
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#container  { position: absolute; left: 35px; top: 25px; }
+
+#header { position: absolute; left: 100px; top: 80px; width: 700px;}
+
+#header h1 {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	text-transform: uppercase;
+	color: yellow;
+	font-size: 85px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#header h2 { 
+	font-size: 18px; 
+	font-weight: bold; 
+	color: white; text-shadow: 1px 1px 1px #000;
+	
+	position: relative; top: 110px;
+}	
+
+#facebook_like_button { position: absolute; left: 100px; top: 225px }
+
+#main {
+	position: absolute;
+	left: 100px;
+	top: 345px;
+	width: 320px;
+	color: white;
+	
+	
+}
+#main h3 { color: white; font-size: 22px; }
+
+
+.quote { 
+	color: white;  
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; 
+}
+
+#mainquote {
+	position: relative; left: 180px; top: -125px;
+	width: 700px;
+	font-size: 28px; 
+	text-shadow: 1px 1px 1px #000;
+}
+
+#teaser { position: absolute; left: 500px; top: 335px;}
+
+#encouragement { position: absolute; left: 100px; top: 700px; width: 800px; color: white; font-size: 20px;}
+#encouragement img.star {  float:left; margin-right: 15px; position: relative; top: -7px; }
+#encouragement a {  color: yellow}
+

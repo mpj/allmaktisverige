@@ -1,0 +1,22 @@
+/* Css for facebook widgets */
+div.like {
+    display:none;
+}
+
+/* hide social plugin plug */
+.wallkit_subtitle .subtitle_left {
+	display: none;
+}
+
+div.wallkit_postcontent {
+	color: white;
+}
+div.wallkit_postcontent span {
+	color: white;
+}
+.connect_widget_connected_text {
+	color: white;
+}
+
+.post_counter { color: white; }
+.uiLinkSubtle { color: #3B5998; }
