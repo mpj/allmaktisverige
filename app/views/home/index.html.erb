@@ -52,18 +52,13 @@
 
 	<div id="header">
 		<h2>Knappnytt-gänget producerar humor åt SVT - släpps hösten 2010!</h2>
-		<h1>Allt makt i Sverige</h1>
+		<h1>All makt i Sverige</h1>
 		<div id="mainquote" class="quote">&quot;Det är fanimej inte alltid så lätt att vara ung diktator!&quot;</div>
 	</div>
 	
 	<div id="facebook_like_button">	
 		<fb:like href="http://allmaktisverige.se" width="425" font="lucida grande" notify="true"></fb:like>
-		<script>
-		  // this will fire when any of the like widgets are "liked" by the user
-		  FB.Event.subscribe('edge.create', function(href, widget) {
-			alert("like");
-		  });
-		</script>
+
 	</div>
 
 	<div id="teaser">
@@ -95,11 +90,9 @@
 $(document).ready(function() {
   window.fbAsyncInit = function() {
     FB.init({appId: '132860020070788', status: true, cookie: true, xfbml: true});
-	FB.Event.subscribe('edge.create', function(response) {
-		console.log("Lieded!");
-		console.log(href);
-		console.log(widget);
-	});
+			  FB.Event.subscribe('edge.create', function(href, widget) {
+			alert("like");
+		  });
 
   };
   (function() {
