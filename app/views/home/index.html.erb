@@ -90,9 +90,9 @@
 $(document).ready(function() {
   window.fbAsyncInit = function() {
     FB.init({appId: '132860020070788', status: true, cookie: true, xfbml: true});
-			  FB.Event.subscribe('edge.create', function(href, widget) {
-			alert("like");
-		  });
+	FB.Event.subscribe('edge.create', function(href, widget) {
+		// TODO: do GA stuff here
+	});
 
   };
   (function() {
