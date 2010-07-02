@@ -86,6 +86,7 @@
   }());
 </script>
 
+
 <div id="container">
 
 	<div id="header">
@@ -121,6 +122,16 @@
 
 </div>
 
+<script>
+$(document).ready(function() {
+	// this will fire when any of the like widgets are "liked" by the user
+	FB.Event.subscribe('edge.create', function(href, widget) {
+		alert("ya like!");
+		console.log(widget);
+	});
+});
 
+
+</script>
 </body>
 </html>
