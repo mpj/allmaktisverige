@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -15,7 +15,7 @@
 	
 	<link rel="canonical" href="http://allmaktisverige.se/" />
 
-	
+
 	<!-- Proper embedding on FB if sharing.-->
 	<meta name="medium" content="video" />
 	<meta name="video_width" content="560" />
@@ -65,10 +65,14 @@
 
 	<div id="teaser">
 		<object width="560" height="340">
-			<param name="movie" value="http://www.youtube.com/v/voqXQnYLGnE&amp;hl=sv_SE&amp;fs=1&amp;rel=0&amp;color1=0x2b405b&amp;color2=0x6b8ab6&amp;hd=1" />
+			<param name="movie" value="http://www.youtube.com/v/voqXQnYLGnE&hl=sv_SE&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6&hd=1" />
 			<param name="allowFullScreen" value="true" />
 			<param name="allowscriptaccess" value="always" />
-			<embed src="http://www.youtube.com/v/voqXQnYLGnE&amp;hl=sv_SE&amp;fs=1&amp;rel=0&amp;color1=0x2b405b&amp;color2=0x6b8ab6&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340" />
+			<embed src="http://www.youtube.com/v/voqXQnYLGnE&hl=sv_SE&fs=1&rel=0&color1=0x2b405b&color2=0x6b8ab6&hd=1" 
+				type="application/x-shockwave-flash"
+				allowscriptaccess="always" 
+				allowfullscreen="true" 
+				width="560" height="340" />
 		</object>
 	</div>
 	
@@ -113,9 +117,6 @@ $(document).ready(function() {
     document.getElementById('fb-root').appendChild(e);
   }());
   
-  // Google Analytics
-  var pageTracker = _gat._getTracker('UA-125505-21');
-  pageTracker._trackPageview();
 });
 </script>
 
